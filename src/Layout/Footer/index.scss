@@ -1,0 +1,39 @@
+@import "./../../Styles/placeholder";
+@import "./../../Styles/theme";
+
+
+
+.footer {
+    background-color: $greyDark;
+    padding: 50px 0;
+    color: $white;
+    .logo-footer{
+        width: 3.375rem;
+        height: 3.375rem;
+        margin-bottom: 1.875rem;
+    }
+    .para{
+        font-size: 1.125rem;
+    }
+    .heading{
+        margin-bottom: 1.25rem;
+    }
+    ul > {
+        li{
+            background-color: red;
+            margin-bottom: 10px;
+            font-size: 1rem;
+            a{
+                color: inherit;
+            }
+            ul{
+                li{
+                    background-color: green;
+                }
+            }
+        }
+    }
+    .social-icon{
+        cursor: pointer;
+    }
+}

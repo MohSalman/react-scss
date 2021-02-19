@@ -1,0 +1,58 @@
+@import "./../../../Styles/theme";
+@import "./../../../Styles/placeholder";
+
+.contact-section {
+  height: 100vh;
+  background-color: $grey;
+  .contact-inner {
+    top: -12.5rem;
+    position: relative;
+    background-color: $primary-color;
+    // height: 100%;
+    border-radius: 1.25rem;
+    padding: 3.75rem 0 2.5rem 0;
+    .form-wrapper {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+      .form-field {
+        margin-bottom: 2.188rem;
+      }
+    }
+    .heading {
+      font-size: 3rem;
+      font-family: Gilroy;
+      color: $white;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .btn-wrapper {
+      position: relative;
+      &::after {
+        bottom: -1.5rem;
+        content: "";
+        width: 150px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 1px;
+        background-color: $grey;
+        opacity: 0.5;
+      }
+    }
+    .heading-sub {
+      font-size: 1.5rem;
+      text-align: center;
+      color: $white;
+      margin-bottom: 1.25rem;
+      margin-top: 3.125rem;
+    }
+    .para {
+      font-size: 1.125rem;
+      max-width: 15.625rem;
+      color: $white;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import './../../Styles/theme';
+@import './../../Styles/placeholder';
+
+.pricing-page {
+    background-color:#e7e7ed ;
+    .page-head {
+        background-color: $primary-color;
+        margin-top: 5.5rem;
+        position: relative;
+        height: 19.938rem;
+        margin-bottom: 7.5rem;
+        @extend %centered;
+
+        .heading {
+            font-size: 3rem;
+            color: $white;
+            margin-bottom: 1.875rem;
+            font-family: Gilroy;
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .particle-style {
+            @extend %particle-style;
+        }
+    }
+    .form-group-custom {
+        margin-bottom: 3.6rem;
+    
+        .input {
+            background-color: #F2F2F2;
+        }
+    }
+}

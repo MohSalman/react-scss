@@ -1,0 +1,48 @@
+@import "./../../../Styles/theme";
+@import "./../../../Styles/placeholder";
+@import './../../../Styles/mixins';
+
+.pricing-section {
+  position: relative;
+  top: -25vh;
+  .inner-wrapper {
+    border-radius: 1.25rem;
+    background-color: $primary-color;
+    position: relative;
+    padding: 5.25rem 2.5rem;
+    .particle-style {
+      @extend %particle-style;
+      z-index: 0;
+    }
+    .heading {
+      font-size: $h2;
+      color: $white;
+      margin-bottom: 1.875rem;
+      font-family: Gilroy;
+      position: relative;
+      z-index: 1;
+    }
+    .para {
+      font-size: 1.125rem;
+      color: $white;
+      position: relative;
+      z-index: 1;
+      span {
+        color: $yellow;
+      }
+    }
+    .btn {
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
+
+.circle{
+  background-color: $yellow;
+  @include avatar(100px, $circle: true);
+}
+.circle2{
+  background-color: $greyDark;
+  @include avatar(100px, $circle: false);
+}

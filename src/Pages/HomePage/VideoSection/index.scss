@@ -1,0 +1,26 @@
+@import "./../../../Styles/theme";
+@import "./../../../Styles/placeholder";
+.video-section {
+  // height: 250vh;
+  background-color: $greyDark;
+  overflow: hidden;
+  position: relative;
+  .video-bg {
+    position: relative;
+    width: 100%;
+    display: block;
+  }
+  .heading {
+    position: absolute;
+    top: 7.5rem;
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+    font-family: Gilroy;
+    // padding: 5rem 0;
+    color: $black;
+    span {
+      color: $yellow;
+    }
+  }
+}

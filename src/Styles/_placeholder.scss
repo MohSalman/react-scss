@@ -1,0 +1,28 @@
+@import "./theme";
+
+%verticle-align {
+  display: flex;
+  align-items: center;
+}
+%centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+%particle-style{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+

@@ -1,0 +1,139 @@
+@import './../../../Styles/theme';
+@import './../../../Styles/placeholder';
+
+.popup-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    z-index: 9999;
+    @extend %centered;
+    transition: all ease-in-out 200ms;
+
+    &.show {
+        top: 0;
+    }
+
+    .popup-inner {
+        background-color: $white;
+        border-radius: 15px;
+        padding: 4.563rem;
+        position: relative;
+
+        &.registration {
+            max-width: 47.625rem;
+            width: 100%;
+        }
+
+        .popup-header {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            cursor: pointer;
+
+            .close-icon {
+                width: 14px;
+                height: 14px;
+            }
+        }
+
+        .registration-heading {
+            text-align: center;
+            margin-top: 1.688rem;
+            margin-bottom: 2rem;
+            font-weight: bold;
+            font-size: 1.875rem;
+        }
+
+        .switch-to-other {
+            border: 1px solid #9B9B9B;
+            border-radius: 5px;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+            display: inline-block;
+            overflow: hidden;
+            position: relative;
+            .btn {
+                font-size: 1rem !important;
+                padding: 0.813rem 1.75rem;
+                text-transform: capitalize;
+                line-height: 100%;
+                background-color: transparent;
+                position: relative;
+                z-index: 1;
+            }
+            .no-class{
+                font-weight: 400;
+                color: #9B9B9B;
+            }
+            &::after{
+                position: absolute;
+                content: '';
+                height: 100%;
+                width: 50%;
+                top:0px;
+                z-index: 0;
+            }
+            &.left{
+                .primary{
+                    color: $white;
+                }
+                &.primary-bg{
+                    &::after{
+                        background-color: $primary-color;
+                        left: 0;
+                        transition: all ease-in-out 200ms;
+                    }
+                }
+            }
+            &.right{
+                .primary{
+                    color: $white;
+                }
+                &.secondary-bg{
+                    &::after{
+                        background-color: $yellow;
+                        transition: all ease-in-out 200ms;
+                        left: 50%;
+                    }
+                }
+            }
+        }
+
+        .form-group-custom {
+            margin-bottom: 2.5rem;
+
+            .input {
+                background-color: #F2F2F2;
+            }
+        }
+    }
+}
+
+.popup-btn{
+    font-size: 1.125rem;
+    padding: 0.8rem 3rem;
+    text-transform: capitalize;
+}
+
+@media (max-width: 1449px) {
+    .popup-wrapper {
+        .popup-inner {
+            padding: 2rem;
+
+            &.registration {
+                max-width: 40.625rem;
+            }
+
+            .form-group-custom {
+                margin-bottom: 1.5rem;
+
+                .input {
+                    background-color: #F2F2F2;
+                    min-height: 1rem;
+                }
+            }
+        }
+    }
+}

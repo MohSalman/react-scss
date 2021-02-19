@@ -1,0 +1,32 @@
+@import "./../../../Styles/theme";
+@import "./../../../Styles/placeholder";
+.who-we-are-section {
+  height: 100vh;
+  background-color: $primary-color;
+  @extend %verticle-align;
+  position: relative;
+  .particle-style {
+    @extend %particle-style;
+  }
+  .inner-section {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 34.375rem;
+    .heading {
+      font-size: $h2;
+      color: $white;
+      margin-bottom: 1.875rem;
+      font-family: Gilroy;
+    }
+    .para {
+      font-size: $para;
+      color: $white;
+      margin-bottom: 1.875rem;
+      font-family: Work Sans;
+    }
+    .white {
+      margin-top: 1.875rem;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@import "./../../Styles/placeholder";
+@import "./../../Styles/theme";
+
+.header > ul li{
+
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 1.25rem 0;
+  z-index: 9999;
+  transition: all ease-in-out 200ms;
+  .inner-wrapper {
+    @extend %verticle-align;
+
+    .logo {
+      width: 3.375rem;
+      height: 3.375rem;
+    }
+
+    .hamburger {}
+
+    .menu-items {
+      margin-left: auto;
+      @extend %verticle-align;
+
+      .menu-item {
+        .item {
+          transition: all ease-in-out 200ms;
+          padding: 0 1.5rem;
+          color: $white;
+          font-size: 1.125rem;
+
+          &.button-auth {
+            transition: all ease-in-out 200ms;
+            background-color: $blue-light;
+            border-radius: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &.bg-white {
+    .inner-wrapper {
+      .menu-items {
+        .menu-item {
+          .item {
+            color: $primary-color;
+            font-size: 1.125rem;
+
+            &.button-auth {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+  > ul{
+    li{
+      color: red;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import "./../../../Styles/theme";
+@import "./../../../Styles/placeholder";
+
+.screen-section {
+  height: 100vh;
+  @extend %centered;
+  flex-direction: column;
+  .heading {
+    font-size: 3rem;
+    font-family: Gilroy;
+    padding: 1.875rem 0 3.125rem 0;
+    color: $primary-color;
+    span {
+      color: $yellow;
+    }
+  }
+  .screens {
+    max-width: 37.5rem;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+}

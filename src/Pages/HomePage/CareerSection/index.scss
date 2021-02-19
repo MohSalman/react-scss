@@ -1,0 +1,17 @@
+@import "./../../../Styles/theme";
+@import "./../../../Styles/placeholder";
+
+.career-section {
+  height: 80vh;
+  .heading {
+    font-size: 3rem;
+    font-family: Gilroy;
+    color: $primary-color;
+    margin-bottom: 1.875rem;
+  }
+  .para {
+    font-size: 1.125rem;
+    margin-bottom: 1.875rem;
+    max-width: 20rem;
+  }
+}

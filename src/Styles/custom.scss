@@ -1,0 +1,97 @@
+@import "./placeholder";
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../assets/fonts/Gilroy-Bold.woff2") format("woff2"),
+    url("../assets/fonts/Gilroy-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("../assets/fonts/WorkSans-Regular.woff2") format("woff2"),
+    url("../assets/fonts/WorkSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  font-size: 14px;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+body,
+ul,
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1280px;
+}
+input:-internal-autofill-selected {
+ background-color: inherit !important;
+}
+
+// scrollbar
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+//
+.btn{
+  &:focus,&:hover{
+    box-shadow: unset;
+    outline: unset;
+  }
+}
+
+
+
+
+@media (min-width: 1440px){
+  :root{
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1920px){
+  :root{
+    font-size: 18px;
+  }
+}
