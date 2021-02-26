@@ -20,9 +20,9 @@ const HomeSection = () => {
     setPopupType(popupType);
   }
 
-  useEffect(() => {
-    document.querySelector('#tech').playbackRate = 2;
-  }, [])
+  // useEffect(() => {
+  //   document.querySelector('#tech').playbackRate = 2;
+  // }, [])
   return (
     <div className="home-section">
       <div className="home-content">

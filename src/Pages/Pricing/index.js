@@ -6,9 +6,9 @@ import './index.scss';
 import Video from './../../assets/video/video.mp4';
 
 const Pricing = () => {
-  useEffect(()=>{
-    document.querySelector('#priceId').playbackRate = 2;
-  },[])
+  // useEffect(()=>{
+  //   document.querySelector('#priceId').playbackRate = 2;
+  // },[])
   return (
     <div className="pricing-page">
       <div className="page-head">
