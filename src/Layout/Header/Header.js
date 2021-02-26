@@ -33,8 +33,8 @@ const Header = () => {
           <HamBurger className="hamburger d-md-none d-block"></HamBurger>
           <ul className="list-unstyled menu-items">
             <li className="menu-item">
-              <NavLink className="item" to={Path.about}>
-                About
+              <NavLink className="item" to={Path.tabSwitchAnimation}>
+                Tab Switch
               </NavLink>
             </li>
             <li className="menu-item">

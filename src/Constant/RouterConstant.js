@@ -13,10 +13,7 @@ const Path = {
   pricing: "/pricing",
   termCondition: "/term-condition",
   contact: "/contact",
-  haulers: "/haulers",
-  truckDriver: "/truck-driver",
-  truckOwner: "/truck-inner",
-  whoWeAre: "/who-we-are",
+  tabSwitchAnimation: "/tab-switch-animation",
 
   // select
 };

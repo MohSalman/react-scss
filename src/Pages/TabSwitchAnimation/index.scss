@@ -1,0 +1,31 @@
+@import './../../Styles/theme';
+@import './../../Styles/placeholder';
+
+.tabswitchanipation-page{
+    padding-top: 10rem;
+    min-height: calc(100vh - 22.063rem);
+    background-color: grey;
+
+    .tabs-scroll{
+        width: 300px;
+        position: relative;
+        .animate-me {
+            position: absolute;
+            content: '';
+            height: 100%;
+            top: 0px;
+            z-index: 0;
+            background-color: red;
+            transition: all ease-in-out 200ms;
+            z-index: 0;
+        }
+        .btn{
+            position: relative;
+            z-index: 1;
+            color: #000000;
+            &.active-button{
+                color: #ffffff;
+            }
+        }
+    }
+}
